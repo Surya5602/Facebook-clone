@@ -1,0 +1,53 @@
+.homepage {
+  background-color: white;
+}
+
+.homelogo img {
+  height: 40px;
+  width: 40px;
+  margin-left: 17px;
+}
+.navbar {
+  display: flex;
+  justify-content: start !important;
+  border-radius: 10px;
+}
+.form-control {
+  border-radius: 30px !important;
+  background-color: rgb(240, 242, 245) !important;
+  width: 80%;
+  margin-left: 12px;
+}
+.homecomponent{
+    padding-left: 70px ;
+}
+.homecomponent1{
+    padding-left: 92px ;
+}
+.rightcomponent{
+    margin-left: 220px;
+    background-color: rgb(228,230,235);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.rightcomponent svg {
+    margin: 12px;
+}
+
+.rightcomponent1{
+    margin-left: 10px;
+    background-color: rgb(228,230,235);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.rightcomponent1 svg{
+    margin: 10px;
+}
+.rightcomponent2  img{
+    border-radius: 50%;
+    margin-left: 10px;
+
+}

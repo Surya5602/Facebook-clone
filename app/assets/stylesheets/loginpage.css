@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(240,242,245);
+
+}
+.signuppage{
+    width: fit-content;
+    margin: 0 auto;
+}
+.signup-letter1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+    border-bottom: 0.5px solid rgb(199, 198, 198);
+
+}
+
+.logo-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image img{
+    width: 250px;
+}
+.signup-box{
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    
+}
+.signup-letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-message{
+    color:red;
+}
+.signin-box{
+    align-items: center;
+    justify-content: center;
+}
+.signin-letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin-form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row1 {
+    display: flex;
+    
+}
+#user_date {
+    margin-left: 14px;
+}
+#user_month {
+    margin-left: 14px;
+}
+#user_year {
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 7px;
+
+}
+.text-start1 {
+    text-align: left!important;
+    
+}
+
+.radio-form {
+    justify-content: space-around;
+    display: flex;
+    margin: 10px;
+}
+
+.redirect_path{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+select{
+    margin: 13px;
+}
