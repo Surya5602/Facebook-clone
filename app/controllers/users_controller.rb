@@ -1,7 +1,4 @@
 class UsersController < ApplicationController
-    def default_url_options
-        { locale: I18n.locale }
-      end
     def index
         @users = User.all
     end

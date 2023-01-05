@@ -39,16 +39,110 @@
     <div class="rightcomponent2 ">
         <%= image_tag "userimage.jpg"%>
     </div>
+  </div>
+  <div class="totalpost">
+        <div class= "leftpost " >
+            <div class="rightcomponent3 ">
+              <%= image_tag "userimage.jpg"%>
+              <p> Fifi </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://w7.pngwing.com/pngs/56/956/png-transparent-friend-request-network-one-one-friend-request-1-facebook-ui-flat-icon.png"%>
+              <p> Friends </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/eECk3ceTaHJ.png"%>
+              <p> Most recent </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/CwKNCefmHON.png"%>
+              <p> Ad Center </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/DHBHg9MEeSC.png"%>
+              <p> Ads Manager </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/Jr0q8qKF2-Y.png"%>
+              <p> Climate Science Center </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/5rR6LRpNc5u.png"%>
+              <p> COVID-19 Information Center </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/fNPcDZC-2PD.png"%>
+              <p> Crisis Responce </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/vxMUnHhu6Do.png"%>
+              <p> Emotional Health </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/1Xvrz50fHMF.png"%>
+              <p> Messenger </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yt/r/PObY9OA5lvJ.png"%>
+              <p> Games </p>
+            </div>
+            <div class="rightcomponent4  ">
+              <%= image_tag "https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/8OasGoQgQgF.png"%>
+              <p> Recent Ad activity </p>
+            </div>
 
-    <div id="posts">
-      <% @posts.each do |post| %>
-       <%= render post %>
-        <p>
-          <%= link_to "Show this post", post %>
-        </p>
-      <% end %>
-    </div>
+            	
+        </div>
 
-  
+        <div id="posts">
+          <div class="newpost">
+            <div class="rightcomponent5 ">
+              <%= image_tag "userimage.jpg"%>
+              <input class="form-control me-2 " type="search" placeholder="what's on your mind Fifi" aria-label="Search">
+            </div>
+            <div class="Newletter">
+              <%= link_to "New post", new_post_path %>
+            </div>
+          </div>
+          <div class = "allposts">
+              <% @posts.each do |post| %>
+                <%= render post %> 
+              <% end %>
+          </div>
+        </div>
+
+        <div class="rightpost">
+          <div class="sponser">
+            <p>Sponsored </p>
+          </div>
+          <div class="contacts">
+            <div class="contacts_heading">
+
+              <p> Contacts </p>
+
+             
+
+            </div>
+
+
+
+
+            <% @user.each do |user|%>
+            
+              <li>
+              <div class="userimage1">
+                <%= image_tag "userimage.png"%>
+              
+              <%= user.name %>
+              </div>
+              </li>
+
+            <%end%>
+
+          </div>
+
+          </div>
+        
+   
+  </div>
 </div>
-<%= link_to "New post", new_post_path %>

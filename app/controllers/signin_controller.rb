@@ -8,7 +8,7 @@ class SigninController < ApplicationController
             session[:id] = @user.id
             session[:name] = @user.name
 
-            redirect_to home_path
+            redirect_to posts_path
         else
             message = "something went wrong"
             redirect_to signin_path, notice: message

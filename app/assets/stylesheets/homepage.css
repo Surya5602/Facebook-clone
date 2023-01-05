@@ -1,5 +1,5 @@
 .homepage {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .homelogo img {
@@ -18,36 +18,206 @@
   width: 80%;
   margin-left: 12px;
 }
-.homecomponent{
-    padding-left: 70px ;
+.homecomponent {
+  padding-left: 70px;
 }
-.homecomponent1{
-    padding-left: 92px ;
+.homecomponent1 {
+  padding-left: 92px;
 }
-.rightcomponent{
-    margin-left: 220px;
-    background-color: rgb(228,230,235);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+.rightcomponent {
+  margin-left: 220px;
+  background-color: rgb(228, 230, 235);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 .rightcomponent svg {
-    margin: 12px;
+  margin: 12px;
 }
 
-.rightcomponent1{
-    margin-left: 10px;
-    background-color: rgb(228,230,235);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+.rightcomponent1 {
+  margin-left: 10px;
+  background-color: rgb(228, 230, 235);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
-.rightcomponent1 svg{
-    margin: 10px;
+.rightcomponent1 svg {
+  margin: 10px;
 }
-.rightcomponent2  img{
-    border-radius: 50%;
-    margin-left: 10px;
+.rightcomponent2 img {
+  border-radius: 50%;
+  margin-left: 10px;
+}
 
+.leftpost {
+  width: 25%;
+  background-color: rgb(228, 230, 235);
+}
+.totalpost {
+  display: flex;
+  background-color: rgb(228, 230, 235);
+  width: 100%;
+  height: 100%;
+}
+#posts {
+  width: 50%;
+  height: 91vh;
+  overflow-y: scroll;
+}
+
+#posts::-webkit-scrollbar {
+  display: none;
+}
+
+.rightpost {
+  width: 25%;
+}
+.sponser p {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 13px !important;
+}
+
+.sponser {
+  margin-top: 22px;
+  margin-left: 50px;
+  border-bottom: 0.5px solid rgb(186, 186, 186);
+}
+
+.rightcomponent3 {
+  display: flex;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+.rightcomponent3 p {
+  margin-left: 10px;
+  margin-top: 6px;
+  font-size: 0.9375rem;
+}
+
+.rightcomponent3 img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.rightcomponent4 p {
+  margin-left: 10px;
+  margin-top: 6px;
+  font-size: 0.9375rem;
+}
+.rightcomponent4 {
+  display: flex;
+  margin-left: 12px;
+}
+
+.rightcomponent4 img {
+  width: 30px;
+  height: 30px;
+}
+
+.newpost {
+  margin: 10px 0px 0px 85px;
+  background-color: white;
+  height: 100px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.rightcomponent5 {
+  display: flex;
+}
+.rightcomponent5 input {
+  margin-top: 10px;
+}
+
+.rightcomponent5 img {
+  margin-left: 12px;
+  margin-top: 12px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.Newletter {
+  border-top: 0.1px solid rgb(220, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.postcomponent {
+  margin-top: 20px;
+  background-color: white;
+  width: 500px;
+  height: 400px;
+}
+
+.postcomponent p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.postcomponent img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.postcomponent1 img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+}
+
+.postcomponent1 strong {
+  margin-top: 19px;
+  margin-left: 10px;
+}
+.postcomponent1 h6 {
+  color: blue;
+  font-weight: 500;
+  margin-top: 23px;
+  margin-left: 8px;
+  font-size: 13px;
+}
+.post54 {
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 20px;
+  margin-left: 85px;
+  width: 500px;
+}
+
+.contacts li{
+  font-size: medium;
+  font-weight: 400;
+  list-style: none;
+  margin-left: 50px;
+}
+.userimage1 img{
+  
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.userimage1{
+margin:10px 0 0 10px;
+}
+
+.contacts_heading p {
+  font-weight: 600;
+  font-size: 17px;
+  color: grey;
+}
+
+.contacts_heading {
+  margin-top: 9px;
+  margin-left: 50px;
 }
