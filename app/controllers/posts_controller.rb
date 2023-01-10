@@ -5,7 +5,16 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     @user = User.all
+
+    if session[:id]     
+      @currentUser = User.find_by(id: session[:id])
+
+      
+    end
+
   end
+
+ 
 
   # GET /posts/1 or /posts/1.json
   def show
@@ -14,6 +23,10 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+
+    if session[:id]     
+      @postUser = User.find_by(id: session[:id])
+    end
   end
 
   # GET /posts/1/edit
@@ -24,7 +37,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     
-   
+    if session[:id]     
+      @postUser = User.find_by(id: session[:id])
+    end
     
     respond_to do |format|
       if @post.save

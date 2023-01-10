@@ -5,8 +5,9 @@
     <div class="homelogo">
       <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" %>
     </div>
-    <div>
-      <input class="form-control me-2 " type="search" placeholder="Search Facebook" aria-label="Search">
+    <div class = "searchbar">
+      <%= image_tag "searchlogo.png"%>
+      <input type="search" placeholder="Search Facebook" aria-label="Search">
     </div>
     <div class="homecomponent">
       <%= image_tag "home_page.png"%>
@@ -44,7 +45,9 @@
         <div class= "leftpost " >
             <div class="rightcomponent3 ">
               <%= image_tag "userimage.jpg"%>
-              <p> Fifi </p>
+
+
+              <p><%=  @currentUser.name%></p>
             </div>
             <div class="rightcomponent4  ">
               <%= image_tag "https://w7.pngwing.com/pngs/56/956/png-transparent-friend-request-network-one-one-friend-request-1-facebook-ui-flat-icon.png"%>
@@ -117,10 +120,12 @@
           </div>
           <div class="contacts">
             <div class="contacts_heading">
-
               <p> Contacts </p>
-
-             
+              <div class="contacts_icon">
+                <%= image_tag "videocall.webp"%>
+                <%= image_tag "searchlogo.png"%>
+                <%= image_tag "threedot.jpg"%>
+             </div>
 
             </div>
 

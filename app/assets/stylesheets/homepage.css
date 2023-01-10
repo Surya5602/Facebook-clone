@@ -25,7 +25,7 @@
   padding-left: 92px;
 }
 .rightcomponent {
-  margin-left: 220px;
+  margin-left: 207px;
   background-color: rgb(228, 230, 235);
   border-radius: 50%;
   height: 40px;
@@ -194,21 +194,20 @@
   width: 500px;
 }
 
-.contacts li{
+.contacts li {
   font-size: medium;
   font-weight: 400;
   list-style: none;
   margin-left: 50px;
 }
-.userimage1 img{
-  
+.userimage1 img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
 
-.userimage1{
-margin:10px 0 0 10px;
+.userimage1 {
+  margin: 10px 0 0 0;
 }
 
 .contacts_heading p {
@@ -219,5 +218,35 @@ margin:10px 0 0 10px;
 
 .contacts_heading {
   margin-top: 9px;
+  display: flex;
   margin-left: 50px;
+  justify-content: space-between;
+}
+
+.contacts_heading img {
+  width: 20px;
+  height: 20px;
+}
+
+.contacts_icon img {
+  margin-right: 19px;
+}
+
+.searchbar{
+  display: flex;
+  background-color:rgb(240,242,245);
+  margin-left:10px ;
+  border-radius: 50px;
+}
+
+.searchbar img {
+  width: 16px;
+  height: 16px;
+  margin: 10px 13px;
+}
+
+.searchbar input{
+  border: none;
+  background-color:rgb(240,242,245);
+  border-radius: 50px;
 }
