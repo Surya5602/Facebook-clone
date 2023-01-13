@@ -3,16 +3,33 @@
     <div class= "postcomponent1">
         <div class="rightcomponent5 ">
           <%= image_tag "userimage.png"%>
-          <strong>UserName</strong>
+          <strong>User_name</strong>
           <h6>Follow </h6>
         </div>
     </div>
     <div class="postcomponent">
-     <p>
-       <%= post.caption %>
-     </p>
-     <%= image_tag post.image_url if post.image %>
-     
+    
+      <div class="postimage">
+        <p>
+          <%= post.caption %>
+        </p>
+         <%= image_tag post.image_url if post.image %>
+      </div>
+
+      <div class="default1">
+      <div class="postlike d-flex pointer1">
+      <%= image_tag "like.png"%>
+      <p>Like</p>
+      </div>
+      <div class="postcomment d-flex pointer1">
+      <%= image_tag "comment.png"%>
+      <p>Comment</p>
+      </div>
+      <div class="postshare d-flex pointer1">
+      <%= image_tag "send.png"%>
+      <p>Share</p>
+      </div>
+      </div>
     </div>
     
     

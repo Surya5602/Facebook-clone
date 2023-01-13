@@ -11,18 +11,18 @@
         <div class = "signup-form">
         <%= form_with(model: @user, url: signin_path, method: :post , remote: true) do |form| %>
             <div class="row m-2">
-                <%= form.text_field :email, placeholder: "Email address"%>
+                <%= form.text_field :email, placeholder: "Email address" , autoComplete: :off %>
             </div>
             <div class="row m-2">
-                <%= form.text_field :password, placeholder: "password"%>
+                <%= form.text_field :password, placeholder: "password", autoComplete: :off ,type: :password%>
             </div>
             <div class="row m-2">
-                <%= form.submit "Sign in" %>
+                <button type="submit" class="btn btn-success mt-3">Sign In</button>
             </div>
         </div>
 
         <% end %>
-        <div class="redirect_path">
+        <div class="redirect_path ">
             <a href="/signup" > sign up for facebook</a>
         </div>
     </div>

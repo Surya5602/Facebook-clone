@@ -8,8 +8,6 @@ class PostsController < ApplicationController
 
     if session[:id]     
       @currentUser = User.find_by(id: session[:id])
-
-      
     end
 
   end
@@ -22,11 +20,15 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
 
-    if session[:id]     
+
+    @post = Post.new
+    if !session[:id]    
+      @postUser = User.find_by(id: 1) 
+    else 
       @postUser = User.find_by(id: session[:id])
     end
+    
   end
 
   # GET /posts/1/edit
@@ -37,9 +39,12 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     
-    if session[:id]     
+    if !session[:id]    
+      @postUser = User.find_by(id: 1) 
+    else 
       @postUser = User.find_by(id: session[:id])
     end
+    
     
     respond_to do |format|
       if @post.save
@@ -83,6 +88,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:caption, :image)
+      params.require(:post).permit(:caption, :image, :user_id)
     end
 end
